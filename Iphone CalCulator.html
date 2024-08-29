@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iphone Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input type="checkbox" class="theme-checkbox" />
+      <div class="design">
+        <div id="Result"></div>
+        <button class="first3" data-key="Escape" onclick="clearResult()">
+          C
+        </button>
+        <button class="first3" data-key="Backspace" onclick="deleteLast()">
+          DEL
+        </button>
+        <button class="first3" data-key="%" onclick="appendCharacter('%')">
+          %
+        </button>
+        <button class="rightmost" data-key="/" onclick="appendCharacter('/')">
+          &#247;
+        </button>
+        <button data-key="7" onclick="appendCharacter('7')">7</button>
+        <button data-key="8" onclick="appendCharacter('8')">8</button>
+        <button data-key="9" onclick="appendCharacter('9')">9</button>
+        <button class="rightmost" data-key="*" onclick="appendCharacter('*')">
+          &#215;
+        </button>
+        <button data-key="4" onclick="appendCharacter('4')">4</button>
+        <button data-key="5" onclick="appendCharacter('5')">5</button>
+        <button data-key="6" onclick="appendCharacter('6')">6</button>
+        <button class="rightmost" data-key="-" onclick="appendCharacter('-')">
+          -
+        </button>
+        <button data-key="1" onclick="appendCharacter('1')">1</button>
+        <button data-key="2" onclick="appendCharacter('2')">2</button>
+        <button data-key="3" onclick="appendCharacter('3')">3</button>
+        <button class="rightmost" data-key="+" onclick="appendCharacter('+')">
+          +
+        </button>
+        <button id="zero" data-key="0" onclick="appendCharacter('0')">0</button>
+        <button data-key="." onclick="appendCharacter('.')">.</button>
+        <button class="rightmost" data-key="Enter" onclick="calculateResult()">
+          =
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
